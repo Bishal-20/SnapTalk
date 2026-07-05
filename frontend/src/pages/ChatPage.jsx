@@ -1,5 +1,5 @@
 import React from 'react';
-import { useChatStore } from '../store/useAuthStore';
+import { useChatStore } from '../store/useChatStore.js';
 import BorderAnimatedContainer from '../components/BorderAnimate.jsx';
 import ProfileHeader from '../components/ProfileHeader.jsx';
 import ActiveTabSwitch from '../components/ActiveTabSwitch.jsx';
@@ -23,11 +23,11 @@ function ChatPage() {
         </div>
 
         {/*RIGHT SIDE */}
-        <div className='flex-1 flex flex-col bg-slate-900/50 backdrop-blur-sm'>
+        {/* <div className='flex-1 flex flex-col bg-slate-900/50 backdrop-blur-sm'>
           {selectedUser ? <ChatContainer />
             : <NoConversationPlaceholder />  
           }
-        </div>
+        </div> */}
       </BorderAnimatedContainer>
     </div>
   )
