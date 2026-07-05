@@ -19,7 +19,7 @@ app.use(cors({origin: process.env.CLIENT_URL , credentials:true}));
 app.use(cookieParser());
 
 app.use("/api/auth" , authRoutes);
-app.use("/api/message" , messageRoutes);
+app.use("/api/messages" , messageRoutes);
 
 //make ready for deployment
 if(process.env.NODE_ENV === 'production'){
